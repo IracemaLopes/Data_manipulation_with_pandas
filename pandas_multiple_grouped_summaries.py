@@ -1,8 +1,7 @@
 import pandas as pd
-sales = pd.read_csv("sales_subset.csv")
-
-# Import numpy with the alias np
 import numpy as np
+
+sales = pd.read_csv("sales_subset.csv")
 
 # For each store type, aggregate weekly_sales: get min, max, mean, and median
 sales_stats = sales.groupby("type")["weekly_sales"].agg([np.min,np.max,np.mean,np.median])

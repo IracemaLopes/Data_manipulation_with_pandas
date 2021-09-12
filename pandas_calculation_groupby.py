@@ -1,5 +1,4 @@
 import pandas as pd
-
 sales=pd.read_csv("sales_subset.csv")
 
 # Group by type; calc total weekly sales
